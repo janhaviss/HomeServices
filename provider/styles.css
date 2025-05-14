@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    /* background-color: #333; */
+    background-color: #474d78;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+  }
+  
+  .sidebar h4 {
+    color: white;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    background-color: #555;
+  }
+  
+  /* change if wnat to */
+  .sidebar .active {
+    background-color: #abd3ad;
+  }
+  
+  /* Content Styles */
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  header {
+    /* background-color: #f2f2f2; */
+    background-color:#b3bcbc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* table{
+
+  } */
+
+  td{
+    width:300px;
+  }
+
+  /* calendar */
+
+  .wrapper, .holder {
+    display: inline-block;
+  }

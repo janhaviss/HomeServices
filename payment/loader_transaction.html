@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <style>
+       body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+        .loading {
+            --speed-of-animation: 0.9s;
+            --gap: 16px;
+            --first-color: #4c86f9;
+            --second-color: #49a84c;
+            --third-color: #f6bb02;
+            --fourth-color: #f6bb02;
+            --fifth-color: #2196f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            gap: 6px;
+            height: 200px;
+        }
+
+        .loading span {
+            width: 4px;
+            height: 50px;
+            background: var(--first-color);
+            animation: scale var(--speed-of-animation) ease-in-out infinite;
+        }
+
+        .loading span:nth-child(2) {
+            background: var(--second-color);
+            animation-delay: -0.8s;
+        }
+
+        .loading span:nth-child(3) {
+            background: var(--third-color);
+            animation-delay: -0.7s;
+        }
+
+        .loading span:nth-child(4) {
+            background: var(--fourth-color);
+            animation-delay: -0.6s;
+        }
+
+        .loading span:nth-child(5) {
+            background: var(--fifth-color);
+            animation-delay: -0.5s;
+        }
+
+        @keyframes scale {
+            0%, 40%, 100% {
+                transform: scaleY(0.05);
+            }
+
+            20% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <p>Please don't refresh the page while <br>
+      your transaction is being processed...</p>
+</div>
+
+<script>
+    setTimeout(function() {
+      window.location.href = 'payment_process.php';
+    }, 10000); // Redirect after 10 seconds
+</script>
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<!-- Add this script at the end of your loader.html -->
+<!-- <script>
+    // Delay in milliseconds (10 seconds)
+    const delayDuration = 10000;
+    
+    // Function to redirect to the next page
+    function redirectToNextPage() {
+      window.location.href = 'payment_process.php'; // Change to the actual URL of your next page
+    }
+    
+    // Set a timer to trigger the redirection after the specified delay
+    setTimeout(redirectToNextPage, delayDuration);
+    </script>
+     -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twilio/sdk": "^7.16",
+        "infobip/infobip-api-php-client": "^5.1",
+        "dompdf/dompdf": "^2.0"
+    }
+}

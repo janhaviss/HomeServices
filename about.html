@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+   body{
+    font-family: 'Montserrat', sans-serif;
+}    
+   
+.w3-panel h2{
+  color:#487f78;
+  font-weight: bold;
+}
+
+    #aboutmain {
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(to right, #487f78 50%, #fff 50%);
+      position: relative;
+      overflow: hidden;
+
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* padding: 10px; */
+      width: 1250px;
+      height: 450px;
+      margin-top: 20px;
+    }
+
+    nav {
+      width: 90%;
+      margin: auto;
+      padding-top: 20px;
+      display: flex;
+      /* float: right; */
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin: 0 5px;
+    }
+
+    nav ul a {
+      text-decoration: none;
+      padding-left: 1.0rem;
+      font-size: 17px;
+      font-weight: bolder;
+      color: #487f78;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav ul a::after {
+      content: "";
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0px;
+      border-radius: 20px;
+      /* background-color: #C8EBB1; */
+      z-index: -1;
+      transition: 0.5s;
+    }
+
+    nav ul a:hover:after {
+      width: 100%;
+    }
+
+    nav img {
+      width: 150px;
+      height: 50px;
+    }
+
+    /* ### my intro div ###*/
+#p1tag{
+  margin-top:30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#p1tag h1{
+ color:#487f78;
+ font-weight: bold;
+}
+/* intro p */
+#p1tag p{
+  font-family: "Fira Sans", sans-serif;
+  color:#000;
+  /* text-align: center; */
+  font-size: 22px;
+  text-align: justify;
+  margin-top: 20px;
+}
+/* intro p close */
+/* ### my intro div css close ### */
+
+.seven h3 {
+    text-align: center;
+        font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+        text-transform: uppercase;
+    font-weight: bolder;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    
+    .seven h3:after,.seven h3:before {
+        content: " ";
+        display: block;
+        border-bottom: 2px solid #487f78;
+        border-top: 2px solid #487f78;
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="containers" id="aboutmain">
+    <nav>
+      <img src="img/logo.png" alt="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- <li><a href="#"> <div class="gap">
+            <p id="city"><i class="fa-solid fa-location-dot"></i></p>
+          </div></a></li> -->
+      </ul>
+      </nav>
+      <div class="center" style="background-color: #fff; box-shadow:15px">
+        <div id="over" style="float: left;width: 50%;height: 430px;">
+          
+          <div id="p1tag">
+            <h1 style="text-align: center;
+          ">About Us</h1>
+            <p> Online Home Services, providing a diverse range of on-demand services for individuals looking to
+                address various household needs. Catering to the dynamic demands of modern lifestyles, our platform
+                seamlessly connects Users with skilled professionals who excel in diverse home-related tasks. Whether
+                it's plumbing, electrical work, carpentry, cleaning, or other essential services, we've got it covered.
+              </p>
+
+              <br>
+<h6 style="text-align: right;"><i>- SoobinSolutions</i></h6>
+          </div>
+        </div>
+
+        <div id="right"
+          style="float:right; width: 50%; height: 430px; position: relative; color:#000;">
+          
+          <img src="img/abouthome.jpeg" style="width: 620px; height: 450px; text-align: center;">
+          
+        </div>
+
+      </div>
+</div>
+<hr style=" border: 0;height: 1px;background-color: #ccc; margin: 20px 0;">
+<div class="container">
+<div class="w3-container" style="background-color: #f2f2f2;">
+  <div class="seven">
+    <h3>Services provided by Us</h3>
+  </div>
+  <div class="w3-panel w3-card" style="background-color: #fff;">
+    <h2>Salon</h2>
+    <p>Our salon offers a wide range of hair care and beauty services. This includes haircuts, styling, coloring, highlights, and treatments such as keratin treatments and hair masks.
+    Additionally, we provide services for nails such as manicures, pedicures, and nail art.
+    Our salon may also offer beauty treatments like waxing, threading, facials, and makeup application.
+    We prioritize customer satisfaction and employ skilled stylists and beauticians to ensure our clients leave feeling pampered and confident.</p></div>
+  
+  
+    <div class="w3-panel w3-card-2" style="background-color: #fff;">
+      <h2>Plumbing</h2>
+      <p> Our plumbing services encompass a variety of tasks related to water systems, pipes, and fixtures in residential, commercial, and industrial settings
+      - This includes repairing leaks, unclogging drains, installing and repairing pipes, fixtures, and appliances like sinks, toilets, showers, and water heaters
+       We also offer services related to water treatment and filtration systems, as well as preventative maintenance to address potential issues before they escalate
+      Our plumbers are experienced, licensed professionals who prioritize efficiency, reliability, and customer satisfaction</p></div>
+  
+      <div class="w3-panel w3-card-4" style="background-color: #fff;">
+        <h2>Electrical</h2>
+        <p>Our electrical services cover installations, repairs, and maintenance of electrical systems in homes, offices, and other properties
+    This includes wiring, lighting installations, electrical panel upgrades, outlet and switch installations, and troubleshooting electrical issues
+    We also offer services for installing and maintaining electrical appliances, security systems, and energy-efficient lighting solutions
+    Safety and compliance with electrical codes are paramount in our work, and our electricians are trained to deliver high-quality service with a focus on safety and efficiency</p></div>  
+
+    <div class="w3-panel w3-card-2" style="background-color: #fff;">
+      <h2>Carpentry</h2>
+      <p> Our carpentry services involve crafting, repairing, and installing various wooden structures and furnishings in residential and commercial spaces
+      This includes constructing and installing cabinets, shelves, doors, windows, staircases, and furniture pieces
+      We also offer services for repairing and refurbishing wooden structures, as well as custom carpentry projects tailored to the client's specifications
+      Our carpenters are skilled craftsmen who prioritize precision, durability, and aesthetic appeal in their work</p></div>
+
+
+    <div class="w3-panel w3-card" style="background-color: #fff;">
+      <h2>Cleaning</h2>
+      <p> Our cleaning services provide thorough and professional cleaning solutions for residential, commercial, and industrial properties
+      This includes regular maintenance cleaning, deep cleaning, move-in/move-out cleaning, and post-construction cleaning
+      We offer customizable cleaning packages tailored to the client's needs, covering areas such as floors, surfaces, appliances, bathrooms, and windows
+      Our cleaners are trained, experienced professionals who use industry-standard equipment and eco-friendly cleaning products to deliver exceptional results</p></div>
+
+
+    <div class="w3-panel w3-card" style="background-color: #fff;">
+      <h2>Painting</h2>
+      <p>Our painting services encompass interior and exterior painting for residential, commercial, and industrial properties
+      This includes surface preparation, such as cleaning, sanding, and priming, as well as painting using high-quality paints and finishes
+      We offer a variety of painting techniques and styles to suit the client's preferences, including decorative painting, faux finishes, and specialty coatings
+       Our painters are skilled professionals who deliver precise, durable, and aesthetically pleasing results while prioritizing cleanliness, safety, and customer satisfaction</p></div>
+
+
+</div>
+</div>
+<br>
+<hr>
+<div class="container">
+  <div class="seven">
+    <h3>Our Vision</h3>
+  </div>
+  <p style="font-family: 'Fira Sans', sans-serif ; font-size: larger; text-align: justify;">"At SoobinSolutions, we are dedicated to bringing peace of mind to homeowners by connecting them with skilled professionals for all their home service needs. From carpentry to plumbing and beyond, our team is committed to delivering top-quality service with integrity, expertise, and reliability. Let us handle the tasks, so you can focus on enjoying your home to the fullest. Welcome to a world where home maintenance is hassle-free."</p>
+
+
+</div>
+<hr style=" border: 0;height: 1px;background-color: #ccc; margin: 20px 0;">
+
+
+  <footer class="bg-body-tertiary text-center" style="background-color: #487f78;">
+    <!-- Grid container -->
+    <div class="container p-4" id="footer">
+      <!-- Section: Images -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init
+              class="bg-image hover-overlay shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img src="img/fooimg06.png" class="w-100"  style="height: 104px; width: 157px; border-radius: 15px;" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init
+              class="bg-image hover-overlay shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img src="img/fooimg01.png" class="w-100" style="height: 104px; width: 157px; border-radius: 15px;"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init
+              class="bg-image hover-overlay shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img src="img/fooimg02.png" class="w-100"  style="height: 104px; width: 157px; border-radius: 15px;"  />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init
+              class="bg-image hover-overlay shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img src="img/fooimg03.png" class="w-100" style="border-radius: 15px;" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init
+              class="bg-image hover-overlay shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img src="img/fooimg04.png" class="w-100"  style="height: 104px; width: 157px; border-radius: 15px;"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div data-mdb-ripple-init
+              class="bg-image hover-overlay shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img src="img/fooimg05.png" class="w-100"  style="height: 104px; width: 157px; border-radius: 15px;"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Images -->
+    </div>
+    <!-- Grid container -->
+
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      All Right Reserved © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/" style="color: #fff; "><b> SoobinSolutions</b></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</body>
+
+</html>
